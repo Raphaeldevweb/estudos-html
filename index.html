@@ -1,33 +1,33 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>"Meu primeiro HTML"</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "arial";
+      }
+    </style>
   </head>
   <body>
-    <h1>Full Stack Blend</h1>
-    <h2>curso de progrmação</h2>
+    <h1>Formulários</h1>
 
-    <ul>
-      <li>html</li>
-      <li>css</li>
-      <li>js</li>
-    </ul>
-
-    <ol start="100">
-      <li>html</li>
-      <li>css</li>
-      <li>js</li>
-    </ol>
-
-    <a href="http://google.com">Vamos ao Google!</a>
-    <img
-      src="https://cdn.digitalks.com.br/wp-content/uploads/2018/05/Logo-fondo-blanco.png"
-      width="200"
-      alt=""
-    />
-    <a href="quemsomos.html">Ir para a pagina Quem Somos</a>
-    <img src="imagens/forest.png" alt="" />
-
-    <img src="../outraimg.png" alt="" width="200" />
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@gmail.com"
+      />
+      <br />
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name:="senha">
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
   </body>
 </html>
