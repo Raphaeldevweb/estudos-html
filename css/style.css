@@ -1,0 +1,119 @@
+* {
+  font-family: "Ropa Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* background-color: aqua; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+header > div {
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 20px;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+#logo {
+  width: 230px;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+#logo h1 {
+  color: #777777;
+  margin: 0;
+  font-size: 75px;
+  font-weight: normal;
+  align-items: center;
+}
+
+.menu {
+  /* background-color: aqua; */
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+#banner {
+  padding: 30px 0;
+  display: flex;
+  width: 100%;
+}
+
+.productcard {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#preco1 {
+  font-size: 35px;
+  color: #888888;
+}
+#descricao1 {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.produto1 {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  width: 40%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+#preco2 {
+  font-size: 35px;
+  color: #888888;
+}
+
+#descricao2 {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.produto2 {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  width: 40%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.descricao {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
