@@ -1,100 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore<span>SE</span></title>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <h1>Formulários</h1>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Explore<span>SE</span></a>
 
-    <p>sasasasasasasasasaawdwqdqdwqwdqwdqwdqdsasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-    </p>
-    <br>
-    <p>sasasasasasasasasaawdwqdqdwqwdqwdqwdqdsasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-    </p>
-    <br>
-    <p>sasasasasasasasasaawdwqdqdwqwdqwdqwdqdsasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-      sasasasasasasasaawdwqdqdwqwdqwdqwdqd
-    </p>
-    <br>
-    <form>
-      <label for="nome">Nome</label>
-      <input
-        type="text"
-        id="nome"
-        name="nome"
-        placeholder="Digite seu nome"
-        required
-      />
-      <br />
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="email@gmail.com"
-        required
-      />
-      <br />
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name:="senha">
-      <br />
-      <label>Você já foi ao cinema esse ano?</label>
-      <br />
-      <input type="radio" id="sim" name="cinema" value="sim" checked /><label
-        for="sim"
-        >Sim</label
-      >
-      <br />
-      <input type="radio" id="não" name="cinema" value="não" /><label for="não"
-        >Não</label
-      >
-      <br />
-      <label for="genero">Qual seu genêro de cinema favorito?</label>
-      <br />
-      <input
-        type="checkbox"
-        id="terror"
-        name="genero"
-        value="terror"
-        checked
-      /><label for="terror">Terror</label>
-      <br />
-      <input type="checkbox" id="drama" name="genero" value="drama" /><label
-        for="drama"
-        >Drama</label
-      >
-      <br />
-      <input type="checkbox" id="romance" name="genero" value="romance" /><label
-        for="romance"
-        >Romance</label
-      >
-      <br />
-      <label for="pais">País</label>
-      <select name="pais" id="pais">
-        <option selected disabled>Selecione</option>
-        <option value="BRA">Brasil</option>
-        <option value="ARG">Argentina</option>
-        <option value="UY">Uruguai</option>
-      </select>
-      <br />
-      <label for="mensagem">Mensagem</label>
-      <br />
-      <textarea name="mensagem" id="mensagem" cols="40" rows="5"></textarea>
-      <br />
-      <button type="button">Teste</button>
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar campos</button>
-      <br />
-    </form>
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="/img/menu.svg"
+          alt="menu"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="/img/exit.svg"
+            alt="close-nav"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="">Quem Somos</a></li>
+            <li><a href="">Trilhas</a></li>
+            <li><a href="">Loja</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="">Contato</a></li>
+            <li class="button1"><a href="">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="left-col">
+        <h1>Explore Sergipe</h1>
+        <p class="subhead">Explore<span>SE</span></p>
+
+        <div class="hero-cta">
+          <a href="" class="primary-cta">Conheça o melhor de Sergipe </a>
+          <a href="" class="watch-video-cta">
+            <img src="/img/watch.svg" alt="Watch a video" />Assista o vídeo
+          </a>
+        </div>
+        <img
+          class="hero-img"
+          src="/img/Bandeira_de_Sergipe.svg"
+          alt="hero-img"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <ul class="features-list">
+        <li class="features">Serra da Miaba</li>
+        <li class="features">Serra de Itabaiana</li>
+        <li class="features">Trilha do Lajeirão</li>
+        <li class="features">Cachoeira de Macambira</li>
+        <li class="features">Complexo do São Francisco</li>
+        <li class="features">Lagoa dos Tambaquis</li>
+        <li class="features">Muito mais...</li>
+      </ul>
+
+      <img src="/img/hero-img.jpg" alt="foto-trilha" />
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="/img/person2.jpg" alt="person" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              reiciendis vero tempora similique ad laboriosam culpa nobis aut
+              optio numquam."
+            </blockquote>
+            <cite> Rapha Doe</cite>
+          </li>
+          <li>
+            <img src="/img/person2.jpg" alt="person" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              reiciendis vero tempora similique ad laboriosam culpa nobis aut
+              optio numquam."
+            </blockquote>
+            <cite> Rapha Doe</cite>
+          </li>
+          <li>
+            <img src="/img/person2.jpg" alt="person" />
+
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              reiciendis vero tempora similique ad laboriosam culpa nobis aut
+              optio numquam."
+            </blockquote>
+            <cite> Rapha Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Entre em contato</h2>
+          <form action="">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="fulano123@exemplo.com"
+            />
+            <label for="Trilha de interesse">Trilha de Interesse</label>
+            <input
+              type="text"
+              id="text"
+              name="text"
+              placeholder="exemplo: Serra de Itabaiana"
+            />
+
+            <label for="Trilha de interesse">Data da Aventura</label>
+            <input type="date" id="date" name="date" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Digite aqui todas as suas dúvidas que responderemos em breve..."
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Enviar Mensagem"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <footer>
+        <div class="container">
+          <!-- <a href="#"><img class="footer-logo" src="/img/githublogo.png" alt="footerlogo"></a> -->
+      </footer>
+    </section>
   </body>
 </html>
