@@ -35,6 +35,7 @@ nav {
 
 .mobile-menu {
   cursor: pointer;
+  width: 2em;
 }
 
 a {
@@ -110,7 +111,16 @@ h1 {
 }
 
 .features {
+  cursor: pointer;
   margin-top: 1.2em;
+  color: rgb(252, 252, 236);
+}
+
+.features-list h2 {
+  text-align: center;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  color: rgb(229, 226, 226);
 }
 
 .features-section img {
@@ -183,11 +193,6 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
 }
-
-/* footer div {
-  align-items: center;
- 
-} */
 
 .footer-logo {
   padding: 3px 0;
