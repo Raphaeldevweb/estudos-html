@@ -171,5 +171,28 @@
         </div>
       </footer>
     </div>
+
+    <!-- adding Javascript for the nav button -->
+
+    <script>
+      // First I need these 3 properties or variables to get it to work
+
+      // 1- this const is the reference for the button which has the id mobile-cta. We can use getElementByID to select an element that has an ID
+      const mobileBtn = document.getElementById("mobile-cta");
+      // 2- another const but we use querySelector to select classes, divs, label, etc or th element name. Ij this case is nav im looking for.
+      const nav = document.querySelector("nav");
+      // 3- another variable for  the nav exit button calling it by its ID.
+      const mobileBtnExit = document.getElementById("mobile-exit");
+
+      // EventListener used when somebody clicks the button
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      // Hiding the nav bar, only changing the variable name and putting 'remove' instead of 'add'
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
   </body>
 </html>
