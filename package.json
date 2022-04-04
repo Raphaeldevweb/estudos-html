@@ -1,0 +1,23 @@
+{
+  "name": "estudos-html-css",
+  "version": "1.0.0",
+  "description": "Project I'm building, related to tourism in my city, for people who likes hiking",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rphaell/estudos-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rphaell/estudos-html-css/issues"
+  },
+  "homepage": "https://github.com/rphaell/estudos-html-css#readme",
+  "devDependencies": {
+    "express": "^4.17.3"
+  }
+}
