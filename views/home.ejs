@@ -29,7 +29,7 @@
       body {
         padding: 0;
         margin: 0;
-        background-color: #212121;
+        background-color: #f2f2f2;
         color: #ccc;
         height: 100%;
         /* background-image: url(../img/bg.jpg); */
@@ -48,7 +48,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background: #f2f2f2;
         pointer-events: none;
         position: fixed;
         left: 0;
@@ -80,7 +80,7 @@
         border: none;
         cursor: pointer;
         padding: 10px 20px;
-        background-color: rgb(60, 0, 200);
+        background-color: rgb(6, 134, 38);
         color: #ccc;
         font-size: 0.9rem;
         border-radius: 2px;
@@ -99,7 +99,7 @@
       }
       a {
         background-color: transparent;
-        color: rgb(80, 0, 250);
+        color: rgb(17, 17, 17);
         text-decoration: underline;
         display: inline-block;
       }
@@ -301,20 +301,22 @@
       </ul>
     </nav>
     <main>
+      <% for(let c of contatos) { %>
       <section>
-        <h3>Nome do Contato</h3>
+        <h3><%= c.nome %></h3>
         <div>
-          <a href="mailto:email@docontato.com">email@docontato.com</a>
-          <a href="mailto:email@docontato.com">email@docontato.com</a>
-          <a href="mailto:email@docontato.com">email@docontato.com</a>
+          <% for ( let e of c.emails) { %>
+          <a href="mailto:<%= c.emails %> "><%= c.emails %></a>
+          <% } %>
         </div>
         <ul>
-          <li><a href="tel:9999999999">99999 - 9999</a></li>
-          <li><a href="tel:9999999999">99999 - 9999</a></li>
-          <li><a href="tel:9999999999">99999 - 9999</a></li>
+          <% for ( let t of c.telefones) { %>
+          <li><a href="tel:<%= c.telefones %>"><%= c.telefones %></a></li>
+          <% } %>
         </ul>
-        <a href="/contatos">Editar</a>
+        <a href="/contatos<% c.id %> ">Editar</a>
       </section>
+      <% } %>
     </main>
 
     <div id="modal">

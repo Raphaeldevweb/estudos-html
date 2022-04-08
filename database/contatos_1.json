@@ -10,5 +10,11 @@
     "nome": "Bia",
     "emails": ["bia@gmail.com"],
     "telefones": ["92345-6799", "91199-9999"]
+  },
+  {
+    "id": 2,
+    "nome": "Mari",
+    "emails": ["mari@gmail.com"],
+    "telefones": ["88345-6799", "91199-9999"]
   }
 ]
