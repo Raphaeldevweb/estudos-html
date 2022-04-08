@@ -6,6 +6,9 @@ const ContatosRouter = require("./routes/ContatosRouter");
 //2-criando um servidor
 const app = express();
 
+// Configurar EJS como template engine
+app.set("view engine", "ejs");
+
 //3-criar rota get no endereço '/' ou raiz para responder requisição com mensagem "olá"
 //na função get colocar o endereço que vai receber a requisição e a função para ser executada quando endereço for acessado
 app.get("/", (req, res) => {

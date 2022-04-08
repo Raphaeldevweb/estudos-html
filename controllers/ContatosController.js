@@ -8,6 +8,25 @@ module.exports = {
   listarContatos: (req, res) => {
     // Importado os contatos do usuário
     let contatos = require(`../database/contatos_${uid}.json`);
-    res.send(contatos);
+
+    // enviando a view para o cliente
+    res.render("home.ejs", {});
+  },
+  capturarContato: (req, res) => {
+    // Importado os contatos do usuário
+    let contatos = require(`../database/contatos_${uid}.json`);
+
+    //descobrir o id do contato
+    let idDoContato = req.params.id;
+
+    // Encontrar no array de contatos o contato que tem o id desejado
+    let contato = contatos.find((c) => c.id == idDoContato);
+
+    // retornar o contato para o cliente ou uma mensagem de erro se o contato n existir
+    if (contato === undefined) {
+      res.send("O contato buscado não existe");
+    } else {
+      res.send(contato);
+    }
   },
 };

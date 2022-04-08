@@ -13,7 +13,7 @@ const router = express.Router();
 
 //4-pede para o roteador definir uma rota( quando acessada a rota dada no primeiro parametros, executar a função em segundo parametro que vem de controllers)
 router.get("/contatos", ContatosController.listarContatos);
-router.get("/contatos/:id", ContatosController.listarContatos);
+router.get("/contatos/:id", ContatosController.capturarContato);
 
 //5-exportar o roteador
 module.exports = router;
