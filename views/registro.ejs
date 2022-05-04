@@ -14,18 +14,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- fonte: https://github.com/sergiomoura/contatos-html-template/blob/main/css/geral.css -->
     <style>
       * {
         box-sizing: border-box;
         font-family: "Open Sans", Arial, sans-serif;
-      }
-
-      html {
-        height: 100%;
-        font-size: 18px;
       }
 
       body {
@@ -38,7 +33,7 @@
         font-weight: bold;
       }
 
-      body::before {
+      /* body::before {
         height: 100%;
         z-index: -1;
         content: "";
@@ -47,36 +42,16 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(248, 245, 245, 0.9);
         pointer-events: none;
         position: fixed;
         left: 0;
         top: 0;
-      }
+      } */
 
       form label {
-        font-size: 0.8rem;
-        display: block;
-        margin: 0 0 10px 0;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="search"],
-      input[type="password"] {
-        padding: 5px;
-        font-size: 1rem;
-        border: 2px solid rgba(0, 0, 0, 0);
-        background-color: rgba(256, 256, 256, 0.8);
-      }
-
-      input[type="text"]:focus,
-      input[type="email"]:focus,
-      input[type="search"]:focus,
-      input[type="password"]:focus {
-        outline: none;
-        border: 2px solid rgb(60, 0, 200);
-        background-color: rgba(256, 256, 256, 1);
+        /* font-size: 0.8rem; */
+        /* display: block; */
+        /* margin: 0 0 10px 0; */
       }
 
       button {
@@ -91,22 +66,10 @@
         display: inline-block;
         cursor: pointer;
       }
-
-      a {
-        background-color: transparent;
-        color: rgb(80, 0, 250);
-        text-decoration: underline;
-        display: inline-block;
-      }
-
-      a:hover {
-        color: #ccc;
-      }
     </style>
 
     <style>
       body {
-        display: flex;
         align-items: center;
         justify-content: center;
       }
@@ -115,6 +78,7 @@
         padding: 40px;
         box-shadow: 0 0 2px inset rgba(256, 256, 256, 0.3);
         width: 400px;
+        margin: 50px auto;
       }
 
       form input {
@@ -139,6 +103,39 @@
   </head>
 
   <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <a class="logo" href="#">Explore<span>SE</span></a>
+
+          <img
+            id="mobile-cta"
+            class="mobile-menu"
+            src="/img/menu.svg"
+            alt="menu"
+          />
+
+          <nav>
+            <img
+              id="mobile-exit"
+              class="mobile-menu-exit"
+              src="/img/exit.svg"
+              alt="close-nav"
+            />
+            <ul class="primary-nav">
+              <li><a href="">Quem Somos</a></li>
+              <li><a href="">Trilhas</a></li>
+              <li><a href="">Comunidade</a></li>
+            </ul>
+            <ul class="secondary-nav">
+              <li><a href="registrar">Registrar</a></li>
+              <li class="button1"><a href="registrar">Entrar</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <form>
       <p class="registrar">REGISTRAR</p>
       <label>
@@ -162,5 +159,23 @@
         <button type="submit">Registrar</button>
       </div>
     </form>
+    <div class="container-footer">
+      <footer>
+        <div>
+          <a href="#"
+            ><img
+              class="footer-logo"
+              src="/img/githublogo.png"
+              alt="footerlogo"
+          /></a>
+          <a href="#"
+            ><img class="footer-logo" src="/img/whatsapp.png" alt="footerlogo"
+          /></a>
+          <a href="#"
+            ><img class="footer-logo" src="/img/discord.png" alt="footerlogo"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
